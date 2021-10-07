@@ -67,6 +67,25 @@ function App({ Component, pageProps }: AppProps) {
         />
         <meta name="msapplication-TileColor" content={siteSetup.colorTheme} />
         <meta name="theme-color" content="#1A1A20" />
+
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="application-name" content={siteSetup.shortSiteTitle} />
+        <meta
+          name="apple-mobile-web-app-title"
+          content={siteSetup.shortSiteTitle}
+        />
+        <meta name="theme-color" content="#1A1A20" />
+        <meta name="msapplication-navbutton-color" content="#1A1A20" />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
+        <meta name="msapplication-starturl" content="/" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
       </Head>
       <GlobalStyles />
       <NextNprogress
