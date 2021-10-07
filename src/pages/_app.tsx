@@ -27,7 +27,7 @@ function App({ Component, pageProps }: AppProps) {
         <meta
           property="og:image"
           itemProp="image"
-          content="/icons/favicon-192x192.png"
+          content={`${siteSetup.url}/icons/favicon-192x192.png`}
         />
         <meta name="twitter:card" content="summary_large_image" />
 
@@ -45,24 +45,24 @@ function App({ Component, pageProps }: AppProps) {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/icons/apple-touch-icon.png"
+          href={`${siteSetup.url}/icons/apple-touch-icon.png`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/icons/favicon-32x32.png"
+          href={`${siteSetup.url}/icons/favicon-32x32.png`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/icons/favicon-16x16.png"
+          href={`${siteSetup.url}/icons/favicon-16x16.png`}
         />
         <link rel="manifest" href="/site.webmanifest" />
         <link
           rel="mask-icon"
-          href="/icons/safari-pinned-tab.svg"
+          href={`${siteSetup.url}/icons/safari-pinned-tab.svg`}
           color={siteSetup.colorTheme}
         />
         <meta name="msapplication-TileColor" content={siteSetup.colorTheme} />
@@ -75,17 +75,12 @@ function App({ Component, pageProps }: AppProps) {
           name="apple-mobile-web-app-title"
           content={siteSetup.shortSiteTitle}
         />
-        <meta name="theme-color" content="#1A1A20" />
         <meta name="msapplication-navbutton-color" content="#1A1A20" />
         <meta
           name="apple-mobile-web-app-status-bar-style"
           content="black-translucent"
         />
         <meta name="msapplication-starturl" content="/" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
       </Head>
       <GlobalStyles />
       <NextNprogress
