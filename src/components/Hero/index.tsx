@@ -1,3 +1,4 @@
+import siteSetup from '../../utils/setup'
 import Button from '../Button'
 
 import * as S from './styled'
@@ -24,7 +25,7 @@ const Hero = ({ title, description, category }: HeroProps) => {
         </S.InfoDetails>
         <S.InfoAside>
           <Button
-            link={`https://git-scm.com/docs/git-${title}`}
+            link={`https://git-scm.com/docs/git-${title}/${siteSetup.language}`}
             layout="primary"
             title="Confira a documentação completa"
           >
