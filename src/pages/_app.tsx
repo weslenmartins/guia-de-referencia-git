@@ -66,6 +66,7 @@ function App({ Component, pageProps }: AppProps) {
           color={siteSetup.colorTheme}
         />
         <meta name="msapplication-TileColor" content={siteSetup.colorTheme} />
+        <meta name="msapplication-tap-highlight" content="no" />
         <meta name="theme-color" content="#1A1A20" />
 
         <meta name="mobile-web-app-capable" content="yes" />
